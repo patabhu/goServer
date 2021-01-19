@@ -1,5 +1,9 @@
-todo crud with-out any framework
+todo crud with http package.
+
 To start server use :-
+
 $: go run main.go
-//or to build into binary
+  
+//r to build into binary
+
 $: go build
