@@ -2,8 +2,10 @@ to-do crud apis.
 ----------------------------------------------------
 To start the server manually follow the steps below.
 1. cd goServer in go path.
-2. source vars.debug.env for environmental variables for http host port and db configs.
-3. in goServer run main.go
+2. source .env for environmental variables for http host port and db configs.
+`source .env`
+3. in goServer run main.go file.
+`go run main.go`
 4. check-out endpoints in controller in todo.go
 ---------------------------------------------------------------------------------------
 Running 2 different Docker containers follow below instructions:-
