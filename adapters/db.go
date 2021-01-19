@@ -3,6 +3,7 @@ package adapters
 import (
 	"fmt"
 	"goServer/config"
+	"goServer/models"
 	"log"
 
 	_ "github.com/jinzhu/gorm/dialects/postgres"
@@ -23,5 +24,6 @@ func NewDBAdapterRepository(config *config.Config) *gorm.DB {
 		return nil
 	}
 	log.Println("connected to database")
+	dbConn.AutoMigrate(models.ToDo{})
 	return dbConn
 }
